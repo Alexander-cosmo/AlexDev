@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f0f;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 16px 40px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.logo {
+  color: #a855f7;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.menu a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+.btn-contactar {
+  background-color: transparent;
+  color: #a855f7;
+  border: 1px solid #a855f7;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-contactar:hover {
+  background-color: #a855f7;
+  color: white;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 40px;
+  gap: 24px;
+}
+
+.hero-titulo {
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1.2;
+  max-width: 700px;
+}
+
+.hero-subtitulo {
+  color: #aaa;
+  font-size: 18px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.btn-hero {
+  background-color: #aa57f8;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-hero:hover {
+  background-color: #9333ea;
+}
+.servicios {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.servicios-titulo {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 48px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 32px 24px;
+  max-width: 280px;
+  transition: border-color 0.3s;
+}
+
+.card:hover {
+  border-color: #a855f7;
+}
+
+.card-icono {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.footer {
+  border-top: 1px solid #2a2a2a;
+  padding: 40px 40px 24px 40px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.footer-copy {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.contacto {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.contacto-titulo {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 48px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.input {
+  width: 100%;
+  max-width: 500px;
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #a855f7;
+}
+
+.textarea {
+  height: 140px;
+  resize: none;
+}
+.proyectos {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.proyectos-titulo {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 48px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #a855f7;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.card-link:hover {
+  color: white;
+}
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .menu {
+    gap: 16px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero-titulo {
+    font-size: 32px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+}
