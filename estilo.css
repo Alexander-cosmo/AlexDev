@@ -253,3 +253,88 @@ body {
   }
 
 }
+.whatsapp-flotante {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  z-index: 999;
+}
+
+.whatsapp-flotante:hover {
+  transform: scale(1.1);
+}
+.detalle {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.volver {
+  color: #a855f7;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.volver:hover {
+  color: white;
+}
+
+.detalle-header {
+  text-align: center;
+  margin: 48px 0;
+}
+
+.detalle-header h1 {
+  color: white;
+  font-size: 36px;
+  margin: 16px 0 8px 0;
+}
+
+.detalle-header p {
+  color: #aaa;
+  font-size: 16px;
+}
+
+.detalle-seccion {
+  margin-bottom: 48px;
+}
+
+.detalle-seccion h2 {
+  color: #a855f7;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.detalle-seccion p {
+  color: #aaa;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tag {
+  background-color: #1a1a1a;
+  border: 1px solid #a855f7;
+  color: #a855f7;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}

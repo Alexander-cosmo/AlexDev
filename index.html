@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlexDev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
   </head>
@@ -12,23 +13,23 @@
   <nav class="navbar">
   <div class="logo">◆ AlexDev</div>
   <ul class="menu">
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Servicios</a></li>
-    <li><a href="#">Contacto</a></li>
+    <li><a href="#Inicio">Inicio</a></li>
+    <li><a href="#Servicios">Servicios</a></li>
+    <li><a href="#Proyectos">Proyectos</a></li>
   </ul>
-  <button class="btn-contactar">Contactar</button>
+  <button class="btn-contactar" onclick="location.href='#contacto'">Contactame </button>
 </nav>
 <!-- menu superior-->
 
-<section class="hero">
+<section class="hero" id="Inicio">
 
 <h1 class="hero-titulo"> Hola, soy Alexander 👋 </h1>
 <p class="hero-subtitulo">Desarrollo soluciones digitales a medida: automatización, páginas web, aplicaciones y soporte técnico.</p>
-<button class="btn-hero">Ver mis servicios</button>
+<button class="btn-hero" onclick="location.href='#Servicios'">Ver mis servicios</button>
 
 </section>
 
-<section class="servicios">
+<section class="servicios" id="Servicios">
   <h2 class="servicios-titulo">Mis Servicios</h2>
   <div class="cards">
 
@@ -59,7 +60,7 @@
   </div>
 </section>
 
-<section class="proyectos">
+<section class="proyectos" id="Proyectos">
   <h2 class="proyectos-titulo">Proyectos</h2>
   <div class="cards">
 
@@ -67,7 +68,7 @@
       <div class="card-icono">🤖</div>
       <h3>Sistema de reportes</h3>
       <p>Automatización completa con Google Forms, Sheets y Apps Script para gestión de líderes.</p>
-      <a href="#" class="card-link">Ver proyecto →</a>
+      <a href="ProyectoReporte.html" class="card-link">Ver proyecto →</a>
     </div>
 
     <div class="card">
@@ -81,28 +82,33 @@
 </section>
 
 
-<section class="contacto">
+<section class="contacto" id="contacto">
   <h2 class="contacto-titulo">Contactame</h2>
-  <form class="formulario">
+  <form class="formulario" action="https://formspree.io/f/xgojebrg" method="POST">
 
-    <input 
-      type="text" 
-      class="input" 
-      placeholder="Tu nombre...">
+  <input 
+    type="text"
+    name="nombre"
+    class="input" 
+    placeholder="Tu nombre..."
+    required>
 
-    <input 
-      type="email" 
-      class="input" 
-      placeholder="Tu email...">
+  <input 
+    type="email"
+    name="email"
+    class="input" 
+    placeholder="Tu email..."
+    required>
 
-    <textarea 
-      class="input textarea" 
-      placeholder="Tu mensaje...">
-    </textarea>
+  <textarea 
+    name="mensaje"
+    class="input textarea" 
+    placeholder="Tu mensaje..."
+    required></textarea>
 
-    <button class="btn-hero">Enviar mensaje</button>
+  <button type="submit" class="btn-hero">Enviar mensaje</button>
 
-  </form>
+</form>
 </section>
 
 
@@ -110,13 +116,21 @@
   <div class="footer-top">
     <div class="logo">◆ AlexDev</div>
     <ul class="menu">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="#Inicio">Inicio</a></li>
+      <li><a href="#Servicios">Servicios</a></li>
+      
     </ul>
   </div>
-  <p class="footer-copy">© 2026 AlexDev. Todos los derechos reservados.</p>
+  
 </footer>
+
+<a href="https://wa.me/541151580293" 
+   class="whatsapp-flotante" 
+   target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+  
+</a>
+
 
   </body>
 </html>
