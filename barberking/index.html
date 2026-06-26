@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BarberKing</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    
+    
+    <nav class="navbar">
+        <div class="logo">✂ BarberKing</div>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="btn-reservar" onclick="location.href='#contacto'" >Reservar turno</button>
+    </nav>
+    
+    
+    
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-contenido">
+            <h1>Tu mejor version <br> empieza acá</h1>
+            <p>Cortes modernos, atención de primera y el estilo que buscás.</p>
+            
+        </div>
+    </section>
+    
+    <section class="servicios" id="servicios">
+        <h2 class="seccion-titulo"> Nuestros servicios</h2>
+        <p class="seccion-subtitulo"> Calidad y estilo en cada corte</p>
+
+        <div class="cards">
+
+
+            <div class="card">
+                <div class="card-icono">✂️</div>
+                <h3>Corte clásico</h3>
+                <p>Corte tradicional con tijera o maquina, lavado y secado incluido.</p>
+                <div class="card-precio">$5.000</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icono">🧔</div>
+                <h3>Arreglo de barba</h3>
+                <p>Perfilado, recorte y definición de barba con productos de la mas alta Calidad</p>
+                <div class="card-precio">$3.500</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icono">👑</div>
+                <h3>Combo King</h3>
+                <p>Corte completo + arreglo de barba + tratamiento capilar.</p>
+                <div class="card-precio">$7.500</div>
+            </div>
+            <div class="card">
+                <div class="card-icono">👑</div>
+                <h3>Afeitado clásico</h3>
+                <p>Afeotado con navaja, toalla caliente y bálsamo aftershave</p>
+                <div class="card-precio">$4.000</div>
+            </div>
+        </div>
+    
+    </section>
+    
+    <section class="por-que" id="por-que">
+         <h2 class="seccion-titulo">¿Por qué elegirnos?</h2>
+         <p class="seccion-subtitulo">Más que un corte, una experiencia</p>
+
+        <div class="razones">
+
+             <div class="razon">
+                 <div class="razon-icono">✂️</div>
+                 <h3>Profesionales expertos</h3>
+                 <p>Nuestro equipo tiene más de 10 años de experiencia en cortes modernos y clásicos.</p>
+             </div>
+
+           <div class="razon">
+                 <div class="razon-icono">⏰</div>
+                 <h3>Sin esperas</h3>
+                 <p>Reservá tu turno online y llegá directo a la silla. Tu tiempo vale.</p>
+             </div>
+
+            <div class="razon">
+                 <div class="razon-icono">💎</div>
+                 <h3>Productos premium</h3>
+                 <p>Usamos solo productos de primera calidad para el cuidado de tu cabello y barba.</p>
+             </div>
+
+            <div class="razon">
+                 <div class="razon-icono">📍</div>
+                 <h3>Ubicación céntrica</h3>
+                 <p>Estamos en el corazón de la ciudad, fácil acceso en transporte público.</p>
+             </div>
+
+        </div>
+     </section>
+
+
+     <section class="galeria" id="galeria">
+          <h2 class="seccion-titulo">Nuestros trabajos</h2>
+          <p class="seccion-subtitulo">Cada corte cuenta una historia</p>
+
+         <div class="galeria-grid">
+              <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600" alt="Corte 1">
+              <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600" alt="Corte 2">
+              <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600" alt="Corte 3">
+              <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600" alt="Corte 4">
+              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600" alt="Corte 5">
+              <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=600" alt="Corte 6">
+         </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+  <h2 class="seccion-titulo">Reservá tu turno</h2>
+  <p class="seccion-subtitulo">Contactanos y te atendemos a la brevedad</p>
+
+  <form class="formulario" action="https://formspree.io/f/xgojebrg" method="POST">
+    <input type="text" name="nombre" class="input" placeholder="Tu nombre..." required>
+    <input type="email" name="email" class="input" placeholder="Tu email..." required>
+    <input type="tel" name="telefono" class="input" placeholder="Tu teléfono...">
+    <textarea name="mensaje" class="input textarea" placeholder="¿Qué servicio te interesa?..." required></textarea>
+    <button type="submit" class="btn-reservar">Reservar turno</button>
+  </form>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="logo">✂ BarberKing</div>
+    <div class="footer-info">
+      <p><i class="fa-solid fa-location-dot"></i> Av. Corrientes 1234, Buenos Aires</p>
+      <p><i class="fa-solid fa-clock"></i> Lun-Vie: 9:00 - 20:00 | Sáb: 9:00 - 17:00</p>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 BarberKing. Todos los derechos reservados.</p>
+</footer>
+
+<a href="https://wa.me/541151580293" class="whatsapp-flotante" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+    
+</body>
+
+
+
+</html>
