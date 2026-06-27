@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Napolitan - Panadería Artesanal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+<nav class="navbar">
+    <div class="logo">🥐 Napolitan</div>
+    <ul class="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="btn-primary" onclick="location.href='#contacto'">Hacer pedido</button>
+  </nav>
+
+
+   <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="hero-contenido">
+      <p class="hero-tag">Panadería artesanal desde 1985</p>
+      <h1>El sabor de siempre,<br>hecho con amor</h1>
+      <p class="hero-sub">Pan fresco todos los días, facturas artesanales y mucho más.</p>
+      <button class="btn-primary" onclick="location.href='#productos'">Ver productos</button>
+    </div>
+  </section>
+
+
+  <section class="productos" id="productos">
+    <h2 class="seccion-titulo">Nuestros productos</h2>
+    <p class="seccion-subtitulo">Elaborados con ingredientes seleccionados cada día</p>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icono">🥖</div>
+        <h3>Pan artesanal</h3>
+        <p>Pan de masa madre elaborado lentamente para una corteza perfecta.</p>
+        <div class="card-precio">$1.200</div>
+      </div>
+
+      <div class="card">
+        <div class="card-icono">🥐</div>
+        <h3>Facturas napolitanas</h3>
+        <p>La especialidad de la casa. Rellenas con dulce de leche o crema pastelera.</p>
+        <div class="card-precio">$450 c/u</div>
+      </div>
+
+      <div class="card">
+        <div class="card-icono">🎂</div>
+        <h3>Tortas personalizadas</h3>
+        <p>Diseñadas especialmente para tu ocasión, con decoración artesanal.</p>
+        <div class="card-precio">Desde $8.000</div>
+      </div>
+
+      <div class="card">
+        <div class="card-icono">🍪</div>
+        <h3>Galletitas caseras</h3>
+        <p>Variedad de galletitas dulces y saladas horneadas diariamente.</p>
+        <div class="card-precio">$800 x doc</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="nosotros" id="nosotros">
+    <div class="nosotros-contenido">
+      <div class="nosotros-imagen">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600" alt="Panadería">
+      </div>
+      <div class="nosotros-texto">
+        <p class="seccion-tag">Nuestra historia</p>
+        <h2>Más de 40 años<br>horneando tradición</h2>
+        <p>Napolitan nació en 1985 con una sola receta: hacer el pan más rico del barrio. Hoy, cuatro décadas después, seguimos usando los mismos ingredientes y el mismo amor de siempre.</p>
+        <p>Cada mañana nos levantamos antes del amanecer para que vos encuentres el pan fresco cuando lo necesitás.</p>
+        <div class="nosotros-datos">
+          <div class="dato">
+            <span class="dato-numero">40+</span>
+            <span class="dato-label">Años de experiencia</span>
+          </div>
+          <div class="dato">
+            <span class="dato-numero">50+</span>
+            <span class="dato-label">Productos artesanales</span>
+          </div>
+          <div class="dato">
+            <span class="dato-numero">100%</span>
+            <span class="dato-label">Ingredientes naturales</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="horarios" id="horarios">
+    <h2 class="seccion-titulo">Horarios</h2>
+    <p class="seccion-subtitulo">Siempre frescos, siempre a tiempo</p>
+    <div class="horarios-grid">
+      <div class="horario-item">
+        <span class="horario-dia">Lunes a Viernes</span>
+        <span class="horario-hora">6:00 - 20:00</span>
+      </div>
+      <div class="horario-item">
+        <span class="horario-dia">Sábados</span>
+        <span class="horario-hora">6:00 - 14:00</span>
+      </div>
+      <div class="horario-item">
+        <span class="horario-dia">Domingos</span>
+        <span class="horario-hora">7:00 - 12:00</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contacto" id="contacto">
+    <h2 class="seccion-titulo">Contacto y pedidos</h2>
+    <p class="seccion-subtitulo">Hacé tu pedido con anticipación</p>
+    <form class="formulario" action="https://formspree.io/f/xgojebrg" method="POST">
+      <input type="text" name="nombre" class="input" placeholder="Tu nombre..." required>
+      <input type="email" name="email" class="input" placeholder="Tu email..." required>
+      <input type="tel" name="telefono" class="input" placeholder="Tu teléfono...">
+      <textarea name="mensaje" class="input textarea" placeholder="¿Qué producto te interesa?..." required></textarea>
+      <button type="submit" class="btn-primary">Enviar pedido</button>
+    </form>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="logo">🥐 Napolitan</div>
+      <div class="footer-info">
+        <p><i class="fa-solid fa-location-dot"></i> Av. San Martín 456, Buenos Aires</p>
+        <p><i class="fa-solid fa-clock"></i> Lun-Vie: 6:00 - 20:00</p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Napolitan. Todos los derechos reservados.</p>
+  </footer>
+
+
+<a href="https://wa.me/541151580293" class="whatsapp-flotante" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+</html>
+
+
+</body>
