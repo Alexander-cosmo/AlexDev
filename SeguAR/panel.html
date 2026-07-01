@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SegurAR - Mi Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="panel-body">
+
+  <aside class="sidebar">
+    <a href="index.html" class="logo sidebar-logo">🛡️ SegurAR</a>
+    <nav class="sidebar-menu">
+      <a href="#" class="sidebar-item activo">
+        <i class="fa-solid fa-house"></i> Inicio
+      </a>
+      <a href="#" class="sidebar-item">
+        <i class="fa-solid fa-file-shield"></i> Mis pólizas
+      </a>
+      <a href="#" class="sidebar-item">
+        <i class="fa-solid fa-credit-card"></i> Pagos
+      </a>
+      <a href="#" class="sidebar-item">
+        <i class="fa-solid fa-triangle-exclamation"></i> Siniestros
+      </a>
+      <a href="#" class="sidebar-item">
+        <i class="fa-solid fa-headset"></i> Mi asesor
+      </a>
+    </nav>
+    <a href="index.html" class="sidebar-logout">
+      <i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión
+    </a>
+  </aside>
+
+  <main class="panel-main">
+    
+    <header class="panel-header">
+      <div>
+        <h1>¡Buen día, Martín! 👋</h1>
+        <p>Resumen de tus seguros al día de hoy</p>
+      </div>
+      <div class="panel-usuario">
+        <div class="autor-avatar">MG</div>
+        <span>Martín González</span>
+      </div>
+    </header>
+
+    <div class="panel-stats">
+      <div class="panel-stat">
+        <div class="panel-stat-icono azul">
+          <i class="fa-solid fa-file-shield"></i>
+        </div>
+        <div>
+          <span class="panel-stat-numero">2</span>
+          <span class="panel-stat-label">Pólizas activas</span>
+        </div>
+      </div>
+      <div class="panel-stat">
+        <div class="panel-stat-icono verde">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div>
+          <span class="panel-stat-numero">Al día</span>
+          <span class="panel-stat-label">Estado de pagos</span>
+        </div>
+      </div>
+      <div class="panel-stat">
+        <div class="panel-stat-icono naranja">
+          <i class="fa-solid fa-calendar"></i>
+        </div>
+        <div>
+          <span class="panel-stat-numero">15/08</span>
+          <span class="panel-stat-label">Próximo vencimiento</span>
+        </div>
+      </div>
+      <div class="panel-stat">
+        <div class="panel-stat-icono rojo">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <div>
+          <span class="panel-stat-numero">0</span>
+          <span class="panel-stat-label">Siniestros activos</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="panel-seccion-titulo">Mis pólizas</h2>
+    <div class="polizas">
+
+      <div class="poliza">
+        <div class="poliza-icono">🚗</div>
+        <div class="poliza-info">
+          <h3>Seguro Automotor</h3>
+          <p>Toyota Corolla 2020 · Patente AB123CD</p>
+          <span class="poliza-numero">Póliza N° 00124567</span>
+        </div>
+        <div class="poliza-estado">
+          <span class="badge-activo">Activa</span>
+          <span class="poliza-vence">Vence: 15/08/2026</span>
+        </div>
+        <button class="btn-outline poliza-btn">Ver detalle</button>
+      </div>
+
+      <div class="poliza">
+        <div class="poliza-icono">🏠</div>
+        <div class="poliza-info">
+          <h3>Seguro del Hogar</h3>
+          <p>Av. Corrientes 1234, CABA · 3 amb.</p>
+          <span class="poliza-numero">Póliza N° 00089341</span>
+        </div>
+        <div class="poliza-estado">
+          <span class="badge-activo">Activa</span>
+          <span class="poliza-vence">Vence: 22/11/2026</span>
+        </div>
+        <button class="btn-outline poliza-btn">Ver detalle</button>
+      </div>
+
+    </div>
+
+    <h2 class="panel-seccion-titulo">Últimos pagos</h2>
+    <div class="tabla-pagos">
+      <div class="tabla-header">
+        <span>Concepto</span>
+        <span>Fecha</span>
+        <span>Monto</span>
+        <span>Estado</span>
+      </div>
+      <div class="tabla-fila">
+        <span>Cuota Automotor - Julio</span>
+        <span>01/07/2026</span>
+        <span>$18.500</span>
+        <span class="badge-activo">Pagado</span>
+      </div>
+      <div class="tabla-fila">
+        <span>Cuota Hogar - Julio</span>
+        <span>01/07/2026</span>
+        <span>$12.300</span>
+        <span class="badge-activo">Pagado</span>
+      </div>
+      <div class="tabla-fila">
+        <span>Cuota Automotor - Agosto</span>
+        <span>01/08/2026</span>
+        <span>$18.500</span>
+        <span class="badge-pendiente">Pendiente</span>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
