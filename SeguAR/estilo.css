@@ -578,6 +578,26 @@ body {
   .footer-info p {
     justify-content: center;
   }
+
+
+.login-contenedor {
+  flex-direction: column;
+  width: 95%;
+  height: auto;
+}
+
+.login-lado-izq {
+  display: none;
+}
+
+.login-lado-der {
+  padding: 32px 24px;
+  width: 100%;
+}
+
+
+
+
 }
 .login-body {
   background-color: #f8fafc;
