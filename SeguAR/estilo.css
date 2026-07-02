@@ -584,15 +584,24 @@ body {
   flex-direction: column;
   width: 95%;
   height: auto;
+  border-radius: 20px;
 }
 
 .login-lado-izq {
-  display: none;
+  padding: 32px 24px;
+  min-height: auto;
 }
 
 .login-lado-der {
   padding: 32px 24px;
-  width: 100%;
+}
+
+.login-info h2 {
+  font-size: 22px;
+}
+
+.login-lista {
+  display: none;
 }
 
 
@@ -602,19 +611,17 @@ body {
 .login-body {
   background-color: #f8fafc;
   background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600');
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .login-contenedor {
-  display: flex;
-  width: 900px;
-  height: 560px;
+  flex-direction: column;
+  width: 95%;
+  height: auto;
   border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
 .login-lado-izq {
