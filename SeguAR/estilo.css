@@ -211,13 +211,14 @@ body {
   padding: 32px 24px;
   width: 300px;
   text-align: center;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
   position: relative;
 }
 
 .card:hover {
   border-color: #1e3a8a;
   box-shadow: 0 8px 30px rgba(30, 58, 138, 0.1);
+  transform: translateY(-8px);
 }
 
 .card-destacada {
@@ -580,6 +581,7 @@ body {
 }
 .login-body {
   background-color: #f8fafc;
+  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600');
   height: 100vh;
   display: flex;
   align-items: center;
@@ -597,10 +599,28 @@ body {
 
 .login-lado-izq {
   flex: 1;
-  background-color: #1e3a8a;
+  background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800');
+  background-size: cover;
+  background-position: center;
   padding: 48px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.login-lado-izq::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 58, 138, 0.85);
+}
+
+.login-info {
+  position: relative;
+  z-index: 1;
 }
 
 .login-info .logo {
