@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Quinta Alba - Salón de eventos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">La Quinta Alba</div>
+    <ul class="menu">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+    </ul>
+    <a href="#contacto" class="btn-primario">Consultar disponibilidad</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-fondo" id="heroFondo"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-contenido">
+      <span class="eyebrow">Espacio para eventos · Zona Norte, Buenos Aires</span>
+      <h1 id="heroTitulo">Un salón que se adapta<br>a tu historia</h1>
+      <p id="heroTexto">Bodas, cumpleaños, aniversarios y eventos corporativos: un mismo espacio, pensado para transformarse según lo que estés celebrando.</p>
+
+      <div class="selector-eventos" id="selectorEventos">
+        <button class="pill activo" data-evento="boda">Boda</button>
+        <button class="pill" data-evento="cumple">Cumpleaños</button>
+        <button class="pill" data-evento="corporativo">Corporativo</button>
+        <button class="pill" data-evento="aniversario">Aniversario</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicios" id="servicios">
+    <span class="seccion-tag">Lo que incluye</span>
+    <h2 class="seccion-titulo">Todo resuelto en un solo lugar</h2>
+    <p class="seccion-subtitulo">Coordinamos cada detalle para que solo tengas que disfrutar el evento</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-numero">01</div>
+        <h3>Salón principal</h3>
+        <p>Espacio climatizado para hasta 200 personas, con pista central y luz natural regulable.</p>
+        <span class="card-dato">Capacidad: 80 - 200 pax</span>
+      </div>
+
+      <div class="card">
+        <div class="card-numero">02</div>
+        <h3>Catering y barra</h3>
+        <p>Menú a elección con opciones vegetarianas, barra de tragos y servicio de mozos incluido.</p>
+        <span class="card-dato">Menús desde 3 pasos</span>
+      </div>
+
+      <div class="card">
+        <div class="card-numero">03</div>
+        <h3>Decoración y ambientación</h3>
+        <p>Asesoramos la puesta en escena según el tipo de evento: florales, mantelería, centros de mesa.</p>
+        <span class="card-dato">Estilo a medida</span>
+      </div>
+
+      <div class="card">
+        <div class="card-numero">04</div>
+        <h3>Sonido e iluminación</h3>
+        <p>Equipo técnico propio, DJ o banda en vivo, y diseño de luces según el momento del evento.</p>
+        <span class="card-dato">Técnico incluido</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria" id="galeria">
+    <span class="seccion-tag">Cómo se ve</span>
+    <h2 class="seccion-titulo">El mismo salón, distintas historias</h2>
+    <p class="seccion-subtitulo">Una selección de eventos realizados en La Quinta Alba</p>
+
+    <div class="galeria-grid">
+      <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600" alt="Salón montado para boda">
+      <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600" alt="Mesa de eventos decorada">
+      <img src="https://images.unsplash.com/photo-1478146059778-26028b07395a?w=600" alt="Salón con iluminación cálida">
+      <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600" alt="Detalle de decoración de mesa">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600" alt="Pista de baile iluminada">
+      <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600" alt="Jardín del salón al atardecer">
+    </div>
+  </section>
+
+  <section class="testimonios" id="testimonios">
+    <span class="seccion-tag">Nos eligieron</span>
+    <h2 class="seccion-titulo">Historias celebradas acá</h2>
+
+    <div class="testimonios-grid">
+      <div class="testimonio">
+        <div class="estrellas">★★★★★</div>
+        <p>El lugar es hermoso y el equipo se encargó de absolutamente todo. Nuestra boda quedó mejor de lo que imaginamos.</p>
+        <div class="testimonio-autor">
+          <div class="autor-avatar">MF</div>
+          <div>
+            <strong>Milagros &amp; Franco</strong>
+            <span>Boda · Marzo 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio">
+        <div class="estrellas">★★★★★</div>
+        <p>Hicimos el cumpleaños de 15 de mi hija y la ambientación fue exactamente lo que pedimos. Súper recomendable.</p>
+        <div class="testimonio-autor">
+          <div class="autor-avatar">RG</div>
+          <div>
+            <strong>Romina Gómez</strong>
+            <span>Cumpleaños · Enero 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio">
+        <div class="estrellas">★★★★★</div>
+        <p>Organizamos el evento de fin de año de la empresa acá. Buena logística, buen sonido y muy buena predisposición.</p>
+        <div class="testimonio-autor">
+          <div class="autor-avatar">DL</div>
+          <div>
+            <strong>Diego Lopez</strong>
+            <span>Evento corporativo · Diciembre 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ubicacion" id="ubicacion">
+    <div class="ubicacion-contenido">
+      <div class="ubicacion-texto">
+        <span class="seccion-tag">Cómo llegar</span>
+        <h2>Fácil acceso, mucho espacio</h2>
+        <p>Estamos a 5 minutos del acceso norte, con estacionamiento propio para más de 40 vehículos.</p>
+        <ul class="ubicacion-lista">
+          <li><i class="fa-solid fa-location-dot"></i> Ruta Panamericana Km 34, Buenos Aires</li>
+          <li><i class="fa-solid fa-car"></i> Estacionamiento privado sin cargo</li>
+          <li><i class="fa-solid fa-clock"></i> Visitas con cita previa, todos los días</li>
+        </ul>
+      </div>
+      <div class="ubicacion-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105119.5!2d-58.7!3d-34.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDI3JzAwLjAiUyA1OMKwNDInMDAuMCJX!5e0!3m2!1ses!2sar!4v1700000000000"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <span class="seccion-tag">Reservá tu fecha</span>
+    <h2 class="seccion-titulo">Contanos tu evento</h2>
+    <p class="seccion-subtitulo">Respondemos en menos de 24hs con disponibilidad y presupuesto</p>
+
+    <form class="formulario" action="https://formspree.io/f/xgojebrg" method="POST">
+      <select name="tipo_evento" class="input">
+        <option value="">¿Qué tipo de evento estás organizando?</option>
+        <option value="boda">Boda</option>
+        <option value="cumpleanos">Cumpleaños</option>
+        <option value="corporativo">Evento corporativo</option>
+        <option value="aniversario">Aniversario</option>
+        <option value="otro">Otro</option>
+      </select>
+      <input type="text" name="nombre" class="input" placeholder="Tu nombre..." required>
+      <input type="email" name="email" class="input" placeholder="Tu email..." required>
+      <input type="tel" name="telefono" class="input" placeholder="Tu teléfono...">
+      <input type="text" name="fecha_tentativa" class="input" placeholder="Fecha tentativa del evento...">
+      <textarea name="mensaje" class="input textarea" placeholder="Contanos cuántos invitados esperás y cualquier detalle importante..."></textarea>
+      <button type="submit" class="btn-primario">Enviar consulta</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="logo">La Quinta Alba</div>
+      <div class="footer-info">
+        <p><i class="fa-solid fa-location-dot"></i> Ruta Panamericana Km 34, Buenos Aires</p>
+        <p><i class="fa-solid fa-phone"></i> +54 11 5158-0293</p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 La Quinta Alba. Todos los derechos reservados. | Página de demostración.</p>
+  </footer>
+
+  <a href="https://wa.me/541151580293" class="whatsapp-flotante" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-icono">✅</div>
+      <h3>¡Consulta enviada!</h3>
+      <p>Te contactamos a la brevedad con la disponibilidad para tu fecha.</p>
+      <button class="btn-primario" onclick="cerrarModal()">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
