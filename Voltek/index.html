@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLTEK - Componentes de PC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">VOLT<span>EK</span></div>
+
+    <div class="buscador">
+      <input type="text" id="inputBuscar" class="buscador-input" placeholder="Buscar componentes...">
+      <button class="buscador-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="navbar-acciones">
+      <button class="btn-login" id="btnLogin">
+        <i class="fa-solid fa-user"></i>
+        <span>Iniciar sesión</span>
+      </button>
+      <button class="btn-carrito" id="btnCarrito">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="carrito-badge" id="carritoBadge">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-contenido">
+      <span class="eyebrow">Componentes de PC · Envíos a todo el país</span>
+      <h1>ARMÁ LA PC<br>QUE TE MERECÉS</h1>
+      <p>CPUs, GPUs, memorias y todo lo que necesitás, con los mejores precios del mercado.</p>
+      <div class="hero-botones">
+        <a href="#catalogo" class="btn-primario">Ver catálogo</a>
+        <a href="armador.html" class="btn-secundario">🛠️ Armá tu PC</a>
+      </div>
+    </div>
+    <div class="hero-corte"></div>
+  </section>
+
+  <section class="catalogo" id="catalogo">
+    <div class="catalogo-header">
+      <span class="seccion-tag">Catálogo</span>
+      <h2 class="seccion-titulo">Componentes disponibles</h2>
+    </div>
+
+    <div class="filtros" id="filtros">
+      <button class="filtro activo" data-categoria="todos">Todos</button>
+      <button class="filtro" data-categoria="cpu">Procesadores</button>
+      <button class="filtro" data-categoria="gpu">Placas de video</button>
+      <button class="filtro" data-categoria="ram">Memorias</button>
+      <button class="filtro" data-categoria="mother">Motherboards</button>
+      <button class="filtro" data-categoria="almacenamiento">Almacenamiento</button>
+      <button class="filtro" data-categoria="fuente">Fuentes</button>
+    </div>
+
+    <div class="productos-grid" id="productosGrid">
+      <!-- Las cards de producto se generan con JavaScript -->
+    </div>
+  </section>
+
+  <section class="nosotros" id="nosotros">
+    <div class="nosotros-contenido">
+      <div class="nosotros-dato">
+        <span class="dato-numero">+800</span>
+        <span class="dato-label">Componentes en catálogo</span>
+      </div>
+      <div class="nosotros-dato">
+        <span class="dato-numero">+15.000</span>
+        <span class="dato-label">PCs armadas</span>
+      </div>
+      <div class="nosotros-dato">
+        <span class="dato-numero">24/7</span>
+        <span class="dato-label">Soporte técnico</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <span class="seccion-tag">Contacto</span>
+    <h2 class="seccion-titulo">¿Tenés dudas sobre tu compra?</h2>
+    <p class="seccion-subtitulo">Escribinos y te asesoramos antes de que compres</p>
+    <form class="formulario" action="https://formspree.io/f/xgojebrg" method="POST">
+      <input type="text" name="nombre" class="input" placeholder="Tu nombre..." required>
+      <input type="email" name="email" class="input" placeholder="Tu email..." required>
+      <textarea name="mensaje" class="input textarea" placeholder="Contanos qué estás buscando..." required></textarea>
+      <button type="submit" class="btn-primario">Enviar consulta</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="logo">VOLT<span>EK</span></div>
+      <p class="footer-copy">© 2026 VOLTEK. Página de demostración.</p>
+    </div>
+  </footer>
+
+  <!-- Carrito lateral -->
+  <div class="carrito-overlay" id="carritoOverlay"></div>
+  <aside class="carrito-panel" id="carritoPanel">
+    <div class="carrito-header">
+      <h3>Tu carrito</h3>
+      <button class="carrito-cerrar" id="carritoCerrar">✕</button>
+    </div>
+    <div class="carrito-items" id="carritoItems">
+      <p class="carrito-vacio" id="carritoVacio">Todavía no agregaste productos.</p>
+    </div>
+    <div class="carrito-footer">
+      <div class="carrito-total">
+        <span>Total</span>
+        <span id="carritoTotal">$0</span>
+      </div>
+      <button class="btn-primario btn-checkout" id="btnCheckout">Finalizar compra</button>
+    </div>
+  </aside>
+
+  <!-- Modal de compra confirmada -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-icono">✅</div>
+      <h3>¡Compra confirmada!</h3>
+      <p id="modalTexto">Tu pedido fue registrado. Esto es una demostración, no se realizó ningún cobro real.</p>
+      <button class="btn-primario" id="modalCerrar">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Modal de login / registro -->
+  <div class="modal-overlay" id="modalLogin">
+    <div class="modal modal-login">
+      <button class="modal-cerrar-x" id="loginCerrarX">✕</button>
+
+      <div class="login-tabs">
+        <button class="login-tab activo" data-tab="login">Iniciar sesión</button>
+        <button class="login-tab" data-tab="registro">Crear cuenta</button>
+      </div>
+
+      <form class="login-form" id="formLogin">
+        <input type="email" class="input" id="loginEmail" placeholder="Tu email..." required>
+        <input type="password" class="input" id="loginPassword" placeholder="Tu contraseña..." required>
+        <p class="login-error" id="loginError"></p>
+        <button type="submit" class="btn-primario">Ingresar</button>
+      </form>
+
+      <form class="login-form" id="formRegistro" style="display:none;">
+        <input type="text" class="input" id="registroNombre" placeholder="Tu nombre..." required>
+        <input type="email" class="input" id="registroEmail" placeholder="Tu email..." required>
+        <input type="password" class="input" id="registroPassword" placeholder="Elegí una contraseña..." required>
+        <p class="login-error" id="registroError"></p>
+        <button type="submit" class="btn-primario">Crear cuenta</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="productos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

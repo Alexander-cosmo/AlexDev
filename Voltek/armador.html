@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armá tu PC - VOLTEK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">VOLT<span>EK</span></a></div>
+    <div class="navbar-acciones">
+      <a href="index.html" class="btn-login">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Volver al catálogo</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="armador">
+    <div class="armador-header">
+      <span class="seccion-tag">Armador de PC</span>
+      <h1 class="seccion-titulo">Armá tu PC a medida</h1>
+      <p class="seccion-subtitulo">Elegí cada componente y comprobamos la compatibilidad por vos</p>
+    </div>
+
+    <div class="armador-layout">
+
+      <!-- Columna izquierda: diagrama visual -->
+      <div class="armador-visual">
+        <svg viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg" class="gabinete-svg">
+          <!-- Carcasa del gabinete -->
+          <rect x="10" y="10" width="280" height="400" rx="12" fill="none" stroke="var(--ink)" stroke-width="3"/>
+
+          <!-- Zona motherboard -->
+          <rect id="zonaMother" class="zona" x="30" y="30" width="240" height="150" rx="6"/>
+          <text x="150" y="20" class="zona-label" text-anchor="middle">MOTHERBOARD</text>
+
+          <!-- Zona CPU (dentro de la mother) -->
+          <rect id="zonaCpu" class="zona zona-chica" x="50" y="50" width="60" height="60" rx="4"/>
+
+          <!-- Zona RAM -->
+          <rect id="zonaRam" class="zona zona-chica" x="130" y="50" width="15" height="110" rx="3"/>
+          <rect id="zonaRam2" class="zona zona-chica" x="150" y="50" width="15" height="110" rx="3"/>
+
+          <!-- Zona GPU -->
+          <rect id="zonaGpu" class="zona" x="30" y="200" width="240" height="50" rx="6"/>
+          <text x="150" y="195" class="zona-label" text-anchor="middle">PLACA DE VIDEO</text>
+
+          <!-- Zona almacenamiento -->
+          <rect id="zonaAlmacenamiento" class="zona" x="30" y="270" width="115" height="40" rx="6"/>
+          <text x="87" y="265" class="zona-label" text-anchor="middle">ALMACENAMIENTO</text>
+
+          <!-- Zona fuente -->
+          <rect id="zonaFuente" class="zona" x="155" y="270" width="115" height="40" rx="6"/>
+          <text x="212" y="265" class="zona-label" text-anchor="middle">FUENTE</text>
+        </svg>
+
+        <div class="armador-precio-flotante">
+          <span>Total</span>
+          <strong id="armadorTotal">$0</strong>
+        </div>
+      </div>
+
+      <!-- Columna derecha: selectores -->
+      <div class="armador-panel">
+
+        <div class="selector-componente">
+          <label>Procesador (CPU)</label>
+          <select id="selectCpu" class="select-componente" data-categoria="cpu">
+            <option value="">Elegir procesador...</option>
+          </select>
+        </div>
+
+        <div class="selector-componente">
+          <label>Motherboard</label>
+          <select id="selectMother" class="select-componente" data-categoria="mother">
+            <option value="">Elegir motherboard...</option>
+          </select>
+          <p class="alerta-compatibilidad" id="alertaSocket"></p>
+        </div>
+
+        <div class="selector-componente">
+          <label>Memoria RAM</label>
+          <select id="selectRam" class="select-componente" data-categoria="ram">
+            <option value="">Elegir memoria...</option>
+          </select>
+        </div>
+
+        <div class="selector-componente">
+          <label>Placa de video (GPU)</label>
+          <select id="selectGpu" class="select-componente" data-categoria="gpu">
+            <option value="">Elegir placa de video...</option>
+          </select>
+        </div>
+
+        <div class="selector-componente">
+          <label>Almacenamiento</label>
+          <select id="selectAlmacenamiento" class="select-componente" data-categoria="almacenamiento">
+            <option value="">Elegir almacenamiento...</option>
+          </select>
+        </div>
+
+        <div class="selector-componente">
+          <label>Fuente de poder</label>
+          <select id="selectFuente" class="select-componente" data-categoria="fuente">
+            <option value="">Elegir fuente...</option>
+          </select>
+          <p class="alerta-compatibilidad" id="alertaPotencia"></p>
+        </div>
+
+        <button class="btn-primario btn-armador-agregar" id="btnAgregarArmado" disabled>
+          Completá tu armado para continuar
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-icono">✅</div>
+      <h3>¡Armado agregado!</h3>
+      <p>Todos los componentes de tu PC se sumaron al carrito.</p>
+      <button class="btn-primario" id="modalCerrar">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="productos.js"></script>
+  <script src="armador.js"></script>
+</body>
+</html>
