@@ -35,27 +35,78 @@
           <!-- Carcasa del gabinete -->
           <rect x="10" y="10" width="280" height="400" rx="12" fill="none" stroke="var(--ink)" stroke-width="3"/>
 
-          <!-- Zona motherboard -->
-          <rect id="zonaMother" class="zona" x="30" y="30" width="240" height="150" rx="6"/>
+          <!-- Zona motherboard: placa con agujeros de montaje y pistas de circuito -->
+          <g id="zonaMother" class="zona-grupo">
+            <rect class="zona-base" x="30" y="30" width="240" height="150" rx="6"/>
+            <circle class="zona-detalle" cx="38" cy="38" r="3"/>
+            <circle class="zona-detalle" cx="262" cy="38" r="3"/>
+            <circle class="zona-detalle" cx="38" cy="172" r="3"/>
+            <circle class="zona-detalle" cx="262" cy="172" r="3"/>
+            <path class="zona-traza" d="M 115 160 L 115 175 L 200 175" fill="none"/>
+            <path class="zona-traza" d="M 200 130 L 260 130" fill="none"/>
+          </g>
           <text x="150" y="20" class="zona-label" text-anchor="middle">MOTHERBOARD</text>
 
-          <!-- Zona CPU (dentro de la mother) -->
-          <rect id="zonaCpu" class="zona zona-chica" x="50" y="50" width="60" height="60" rx="4"/>
+          <!-- Zona CPU: chip cuadrado con pines alrededor -->
+          <g id="zonaCpu" class="zona-grupo">
+            <rect class="zona-base" x="50" y="50" width="60" height="60" rx="3"/>
+            <rect class="zona-nucleo" x="62" y="62" width="36" height="36" rx="2"/>
+            <!-- pines arriba y abajo -->
+            <line class="zona-pin" x1="58" y1="47" x2="58" y2="50"/>
+            <line class="zona-pin" x1="68" y1="47" x2="68" y2="50"/>
+            <line class="zona-pin" x1="78" y1="47" x2="78" y2="50"/>
+            <line class="zona-pin" x1="88" y1="47" x2="88" y2="50"/>
+            <line class="zona-pin" x1="98" y1="47" x2="98" y2="50"/>
+            <line class="zona-pin" x1="58" y1="110" x2="58" y2="113"/>
+            <line class="zona-pin" x1="68" y1="110" x2="68" y2="113"/>
+            <line class="zona-pin" x1="78" y1="110" x2="78" y2="113"/>
+            <line class="zona-pin" x1="88" y1="110" x2="88" y2="113"/>
+            <line class="zona-pin" x1="98" y1="110" x2="98" y2="113"/>
+          </g>
 
-          <!-- Zona RAM -->
-          <rect id="zonaRam" class="zona zona-chica" x="130" y="50" width="15" height="110" rx="3"/>
-          <rect id="zonaRam2" class="zona zona-chica" x="150" y="50" width="15" height="110" rx="3"/>
+          <!-- Zona RAM: 2 módulos con muesca típica y contactos dorados -->
+          <g id="zonaRam" class="zona-grupo">
+            <path class="zona-base" d="M 130 50 L 145 50 L 145 150 L 137 150 L 137 155 L 130 155 Z"/>
+            <line class="zona-pin" x1="132" y1="150" x2="132" y2="155"/>
+            <line class="zona-pin" x1="135" y1="150" x2="135" y2="155"/>
+            <line class="zona-pin" x1="140" y1="150" x2="140" y2="155"/>
+            <line class="zona-pin" x1="143" y1="150" x2="143" y2="155"/>
+          </g>
+          <g id="zonaRam2" class="zona-grupo">
+            <path class="zona-base" d="M 150 50 L 165 50 L 165 150 L 157 150 L 157 155 L 150 155 Z"/>
+            <line class="zona-pin" x1="152" y1="150" x2="152" y2="155"/>
+            <line class="zona-pin" x1="155" y1="150" x2="155" y2="155"/>
+            <line class="zona-pin" x1="160" y1="150" x2="160" y2="155"/>
+            <line class="zona-pin" x1="163" y1="150" x2="163" y2="155"/>
+          </g>
 
-          <!-- Zona GPU -->
-          <rect id="zonaGpu" class="zona" x="30" y="200" width="240" height="50" rx="6"/>
+          <!-- Zona GPU: placa alargada con 2 coolers y el conector PCIe -->
+          <g id="zonaGpu" class="zona-grupo">
+            <rect class="zona-base" x="30" y="200" width="240" height="50" rx="6"/>
+            <circle class="zona-nucleo" cx="80" cy="225" r="16"/>
+            <circle class="zona-nucleo" cx="140" cy="225" r="16"/>
+            <path class="zona-pin" d="M 80 213 L 80 237 M 68 225 L 92 225 M 71 216 L 89 234 M 89 216 L 71 234" fill="none"/>
+            <path class="zona-pin" d="M 140 213 L 140 237 M 128 225 L 152 225 M 131 216 L 149 234 M 149 216 L 131 234" fill="none"/>
+            <rect class="zona-detalle" x="185" y="212" width="70" height="26" rx="2"/>
+            <rect class="zona-fondo" x="264" y="216" width="8" height="18" rx="1"/>
+          </g>
           <text x="150" y="195" class="zona-label" text-anchor="middle">PLACA DE VIDEO</text>
 
-          <!-- Zona almacenamiento -->
-          <rect id="zonaAlmacenamiento" class="zona" x="30" y="270" width="115" height="40" rx="6"/>
+          <!-- Zona almacenamiento: SSD M.2 alargado -->
+          <g id="zonaAlmacenamiento" class="zona-grupo">
+            <rect class="zona-base" x="30" y="270" width="115" height="40" rx="6"/>
+            <rect class="zona-detalle" x="42" y="282" width="45" height="16" rx="2"/>
+            <circle class="zona-pin-punto" cx="130" cy="278" r="2.5"/>
+          </g>
           <text x="87" y="265" class="zona-label" text-anchor="middle">ALMACENAMIENTO</text>
 
-          <!-- Zona fuente -->
-          <rect id="zonaFuente" class="zona" x="155" y="270" width="115" height="40" rx="6"/>
+          <!-- Zona fuente: cubo con rejilla circular de ventilador -->
+          <g id="zonaFuente" class="zona-grupo">
+            <rect class="zona-base" x="155" y="270" width="115" height="40" rx="6"/>
+            <circle class="zona-nucleo" cx="212" cy="290" r="14"/>
+            <circle class="zona-fondo" cx="212" cy="290" r="9"/>
+            <path class="zona-pin" d="M 212 281 L 212 299 M 203 290 L 221 290 M 205 283 L 219 297 M 219 283 L 205 297" fill="none"/>
+          </g>
           <text x="212" y="265" class="zona-label" text-anchor="middle">FUENTE</text>
         </svg>
 

@@ -781,16 +781,76 @@ h1, h2, h3 {
   height: auto;
 }
 
-.zona {
+.zona-base {
   fill: #e3e3e5;
   stroke: #c8c8cb;
   stroke-width: 2;
   transition: fill 0.4s, stroke 0.4s;
 }
 
-.zona.zona-llena {
+.zona-nucleo {
+  fill: #cfcfd2;
+  transition: fill 0.4s;
+}
+
+.zona-fondo {
+  fill: #e3e3e5;
+  stroke: #c8c8cb;
+  stroke-width: 1.5;
+  transition: fill 0.4s, stroke 0.4s;
+}
+
+.zona-detalle {
+  fill: #b8b8bc;
+  transition: fill 0.4s;
+}
+
+.zona-traza {
+  stroke: #c8c8cb;
+  stroke-width: 1.5;
+  transition: stroke 0.4s;
+}
+
+.zona-pin {
+  stroke: #b0b0b4;
+  stroke-width: 1.5;
+  transition: stroke 0.4s;
+}
+
+.zona-pin-punto {
+  fill: #b8b8bc;
+  transition: fill 0.4s;
+}
+
+/* Cuando el grupo tiene la clase zona-llena, todas sus formas cambian a rojo */
+.zona-grupo.zona-llena .zona-base {
   fill: var(--red);
   stroke: var(--red-dark);
+}
+
+.zona-grupo.zona-llena .zona-nucleo {
+  fill: var(--red-dark);
+}
+
+.zona-grupo.zona-llena .zona-fondo {
+  fill: var(--red);
+  stroke: var(--red-dark);
+}
+
+.zona-grupo.zona-llena .zona-detalle {
+  fill: var(--red-dark);
+}
+
+.zona-grupo.zona-llena .zona-traza {
+  stroke: rgba(255,255,255,0.55);
+}
+
+.zona-grupo.zona-llena .zona-pin {
+  stroke: rgba(255,255,255,0.7);
+}
+
+.zona-grupo.zona-llena .zona-pin-punto {
+  fill: #ffffff;
 }
 
 .zona-label {
