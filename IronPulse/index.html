@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronPulse - Entrená sin límites</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">IRON<span>PULSE</span></div>
+    <ul class="menu" id="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#clases">Clases</a></li>
+      <li><a href="#sedes">Sedes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="btn-primario" onclick="location.href='#planes'">Sumate ahora</button>
+    <button class="btn-hamburguesa" id="btnHamburguesa">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="hero-contenido">
+      <span class="hero-eyebrow">Musculación · Clases · Nutrición</span>
+      <h1>ENTRENÁ SIN<br>LÍMITES</h1>
+      <p>Máquinas de última generación, profes que te acompañan y un plan hecho a tu medida.</p>
+      <div class="hero-btns">
+        <button class="btn-primario" onclick="location.href='#planes'">Ver planes</button>
+        <button class="btn-outline" onclick="location.href='#sedes'">Nuestras sedes</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-numero">4</span><span class="stat-label">Sedes</span></div>
+        <div class="stat"><span class="stat-numero">+2000</span><span class="stat-label">Socios activos</span></div>
+        <div class="stat"><span class="stat-numero">15+</span><span class="stat-label">Profesores</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="planes reveal" id="planes">
+    <div class="seccion-header">
+      <span class="seccion-tag">Elegí tu plan</span>
+      <h2 class="seccion-titulo">Planes para cada objetivo</h2>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <h3>Básico</h3>
+        <div class="card-precio">$18.000<span>/mes</span></div>
+        <ul class="card-lista">
+          <li>✅ Acceso a musculación</li>
+          <li>✅ 1 sede a elección</li>
+          <li>✅ Horario libre</li>
+        </ul>
+        <button class="btn-outline">Elegir plan</button>
+      </div>
+
+      <div class="card card-destacada">
+        <span class="card-badge">Más elegido</span>
+        <h3>Full</h3>
+        <div class="card-precio">$28.000<span>/mes</span></div>
+        <ul class="card-lista">
+          <li>✅ Musculación + clases</li>
+          <li>✅ Acceso a las 4 sedes</li>
+          <li>✅ Asesoramiento nutricional</li>
+          <li>✅ Medición In-Body mensual</li>
+        </ul>
+        <button class="btn-primario">Elegir plan</button>
+      </div>
+
+      <div class="card">
+        <h3>Anual</h3>
+        <div class="card-precio">$22.000<span>/mes</span></div>
+        <ul class="card-lista">
+          <li>✅ Todo lo del plan Full</li>
+          <li>✅ 20% de descuento</li>
+          <li>✅ Congelamiento incluido</li>
+        </ul>
+        <button class="btn-outline">Elegir plan</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="clases reveal" id="clases">
+    <div class="seccion-header">
+      <span class="seccion-tag">Actividades</span>
+      <h2 class="seccion-titulo">Nuestras clases</h2>
+    </div>
+    <div class="clases-grid">
+      <div class="clase-card">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&q=80" alt="Musculación">
+        <div class="clase-info"><h3>Musculación</h3></div>
+      </div>
+      <div class="clase-card">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&q=80" alt="Funcional">
+        <div class="clase-info"><h3>Funcional</h3></div>
+      </div>
+      <div class="clase-card">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80" alt="Spinning">
+        <div class="clase-info"><h3>Spinning</h3></div>
+      </div>
+      <div class="clase-card">
+        <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=500&q=80" alt="Box">
+        <div class="clase-info"><h3>Box</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sedes reveal" id="sedes">
+    <div class="seccion-header">
+      <span class="seccion-tag">Encontranos</span>
+      <h2 class="seccion-titulo">Nuestras sedes</h2>
+    </div>
+    <div class="sedes-grid">
+      <div class="sede-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Benavídez</h3>
+        <p>Av. Márquez 1450</p>
+      </div>
+      <div class="sede-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>General Pacheco</h3>
+        <p>Av. Presidente Perón 2100</p>
+      </div>
+      <div class="sede-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Tigre Centro</h3>
+        <p>Av. Cazón 850</p>
+      </div>
+      <div class="sede-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>El Talar</h3>
+        <p>Av. Capitán Sarmiento 320</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto reveal" id="contacto">
+    <div class="seccion-header">
+      <span class="seccion-tag">Sumate hoy</span>
+      <h2 class="seccion-titulo">Pedí tu clase de prueba gratis</h2>
+    </div>
+    <form class="formulario" id="formularioContacto" action="https://formspree.io/f/xgojebrg" method="POST">
+      <input type="text" name="nombre" class="input" placeholder="Tu nombre..." required>
+      <input type="tel" name="telefono" class="input" placeholder="Tu teléfono..." required>
+      <select name="sede" class="input" required>
+        <option value="">¿Qué sede te queda más cerca?</option>
+        <option value="benavidez">Benavídez</option>
+        <option value="pacheco">General Pacheco</option>
+        <option value="tigre">Tigre Centro</option>
+        <option value="eltalar">El Talar</option>
+      </select>
+      <button type="submit" class="btn-primario">Quiero mi clase gratis</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="logo">IRON<span>PULSE</span></div>
+      <p class="footer-copy">© 2026 IronPulse. Página de demostración.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/541151580293" class="whatsapp-flotante" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-icono">✅</div>
+      <h3>¡Listo!</h3>
+      <p>Te contactaremos a la brevedad para coordinar tu clase de prueba gratis.</p>
+      <button class="btn-primario" id="modalCerrar">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
