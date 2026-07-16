@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Cava - Cocina de autor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor-punto" id="cursorPunto"></div>
+  <div class="cursor-anillo" id="cursorAnillo"></div>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progreso" id="scrollProgreso"></div>
+
+  <!-- Loader inicial -->
+  <div class="loader" id="loader">
+    <div class="loader-texto">LA CAVA</div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">La Cava</div>
+    <ul class="menu" id="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#menu-destacado">Menú</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#ambiente">Ambiente</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+    </ul>
+    <button class="btn-dorado" onclick="location.href='#reservas'">Reservar mesa</button>
+    <button class="btn-hamburguesa" id="btnHamburguesa" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-parallax" id="heroParallax"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-contenido">
+      <p class="hero-eyebrow" data-splitv>Cocina de autor desde 2012</p>
+      <h1 class="hero-titulo" data-split>Donde cada plato<br>cuenta una historia</h1>
+      <p class="hero-subtitulo">Ingredientes de estación, técnica clásica y un toque de fuego para redescubrir sabores.</p>
+      <div class="hero-btns">
+        <button class="btn-dorado" onclick="location.href='#menu-destacado'">Ver el menú</button>
+        <button class="btn-outline" onclick="location.href='#reservas'">Reservar mesa</button>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Descubrí más</span>
+      <div class="hero-scroll-linea"></div>
+    </div>
+  </section>
+
+  <section class="marquee-seccion">
+    <div class="marquee-track">
+      <span>COCINA DE AUTOR</span><span>·</span>
+      <span>INGREDIENTES DE ESTACIÓN</span><span>·</span>
+      <span>CARTA DE VINOS</span><span>·</span>
+      <span>AMBIENTE ÍNTIMO</span><span>·</span>
+      <span>COCINA DE AUTOR</span><span>·</span>
+      <span>INGREDIENTES DE ESTACIÓN</span><span>·</span>
+      <span>CARTA DE VINOS</span><span>·</span>
+      <span>AMBIENTE ÍNTIMO</span><span>·</span>
+    </div>
+  </section>
+
+  <section class="menu-destacado" id="menu-destacado">
+    <div class="seccion-header reveal">
+      <p class="seccion-tag">Nuestra propuesta</p>
+      <h2 class="seccion-titulo">Platos destacados</h2>
+    </div>
+
+    <div class="platos-grid">
+
+      <div class="plato-card reveal">
+        <div class="plato-imagen-wrap">
+          <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=700&q=80" alt="Risotto de hongos" class="plato-imagen">
+        </div>
+        <div class="plato-info">
+          <div class="plato-nombre-precio">
+            <h3>Risotto de hongos silvestres</h3>
+            <span class="plato-precio">$8.500</span>
+          </div>
+          <p>Arroz carnaroli, hongos de estación, parmesano 24 meses y trufa negra.</p>
+        </div>
+      </div>
+
+      <div class="plato-card reveal">
+        <div class="plato-imagen-wrap">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80" alt="Bife de chorizo" class="plato-imagen">
+        </div>
+        <div class="plato-info">
+          <div class="plato-nombre-precio">
+            <h3>Bife de chorizo a la brasa</h3>
+            <span class="plato-precio">$12.900</span>
+          </div>
+          <p>400g madurado 21 días, papas rústicas y chimichurri de la casa.</p>
+        </div>
+      </div>
+
+      <div class="plato-card reveal">
+        <div class="plato-imagen-wrap">
+          <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=700&q=80" alt="Salmón" class="plato-imagen">
+        </div>
+        <div class="plato-info">
+          <div class="plato-nombre-precio">
+            <h3>Salmón rosado a la plancha</h3>
+            <span class="plato-precio">$10.200</span>
+          </div>
+          <p>Puré de coliflor, espárragos grillados y beurre blanc de limón.</p>
+        </div>
+      </div>
+
+      <div class="plato-card reveal">
+        <div class="plato-imagen-wrap">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=700&q=80" alt="Postre" class="plato-imagen">
+        </div>
+        <div class="plato-info">
+          <div class="plato-nombre-precio">
+            <h3>Volcán de chocolate 70%</h3>
+            <span class="plato-precio">$4.800</span>
+          </div>
+          <p>Centro líquido, helado de vainilla artesanal y crumble de almendras.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="nosotros" id="nosotros">
+    <div class="nosotros-imagen-wrap reveal">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="Chef en cocina" class="nosotros-imagen">
+    </div>
+    <div class="nosotros-texto reveal">
+      <p class="seccion-tag">Nuestra historia</p>
+      <h2>Más de una década<br>cocinando con fuego y paciencia</h2>
+      <p>La Cava nació en 2012 de la idea de que un buen plato no necesita artificios, solo ingredientes honestos y tiempo. Cada receta pasa por el mismo horno de leña desde el primer día.</p>
+      <p>Hoy seguimos eligiendo cada producto de estación y trabajando con productores locales que comparten nuestra misma obsesión por el sabor.</p>
+      <div class="nosotros-datos">
+        <div class="dato">
+          <span class="dato-numero" data-contador="12">0</span>
+          <span class="dato-label">Años de trayectoria</span>
+        </div>
+        <div class="dato">
+          <span class="dato-numero" data-contador="40">0</span>
+          <span class="dato-label">Platos en la carta</span>
+        </div>
+        <div class="dato">
+          <span class="dato-numero" data-contador="98">0</span>
+          <span class="dato-label">% de reseñas positivas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ambiente" id="ambiente">
+    <div class="seccion-header reveal">
+      <p class="seccion-tag">Un lugar para quedarse</p>
+      <h2 class="seccion-titulo">El ambiente de La Cava</h2>
+    </div>
+
+    <div class="ambiente-galeria">
+      <div class="ambiente-item ambiente-grande reveal">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80" alt="Salón principal">
+      </div>
+      <div class="ambiente-item reveal">
+        <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=600&q=80" alt="Mesa servida">
+      </div>
+      <div class="ambiente-item reveal">
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80" alt="Barra de vinos">
+      </div>
+      <div class="ambiente-item reveal">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80" alt="Detalle de mesa">
+      </div>
+      <div class="ambiente-item reveal">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Terraza">
+      </div>
+    </div>
+  </section>
+
+  <section class="delivery reveal">
+    <div class="delivery-contenido">
+      <p class="seccion-tag">También llegamos a tu casa</p>
+      <h2>¿No podés venir?<br>Te lo llevamos nosotros</h2>
+      <p>Pedí por WhatsApp y recibí tu plato favorito en menos de 40 minutos, con el mismo cuidado que en el salón.</p>
+      <a href="https://wa.me/541151580293" target="_blank" class="btn-dorado">
+        <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <section class="reservas" id="reservas">
+    <div class="seccion-header reveal">
+      <p class="seccion-tag">Te esperamos</p>
+      <h2 class="seccion-titulo">Reservá tu mesa</h2>
+    </div>
+    <form class="formulario reveal" id="formularioReserva" action="https://formspree.io/f/xgojebrg" method="POST">
+      <div class="form-fila">
+        <input type="text" name="nombre" class="input" placeholder="Tu nombre..." required>
+        <input type="tel" name="telefono" class="input" placeholder="Tu teléfono..." required>
+      </div>
+      <div class="form-fila">
+        <input type="date" name="fecha" class="input" required>
+        <select name="personas" class="input" required>
+          <option value="">Cantidad de personas</option>
+          <option value="1-2">1 a 2 personas</option>
+          <option value="3-4">3 a 4 personas</option>
+          <option value="5-8">5 a 8 personas</option>
+          <option value="9+">Más de 9 personas</option>
+        </select>
+      </div>
+      <textarea name="mensaje" class="input textarea" placeholder="¿Alguna preferencia o comentario?"></textarea>
+      <button type="submit" class="btn-dorado">Confirmar reserva</button>
+    </form>
+  </section>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-icono">✅</div>
+      <h3>¡Reserva confirmada!</h3>
+      <p>Te contactaremos a la brevedad para confirmar tu mesa. ¡Gracias por elegirnos!</p>
+      <button class="btn-dorado" id="modalCerrar">Cerrar</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="logo">La Cava</div>
+      <div class="footer-info">
+        <p><i class="fa-solid fa-location-dot"></i> Av. del Libertador 3450, Buenos Aires</p>
+        <p><i class="fa-solid fa-clock"></i> Mar-Dom: 20:00 - 00:30</p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 La Cava. Página de demostración.</p>
+  </footer>
+
+  <a href="https://wa.me/541151580293" class="whatsapp-flotante" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
