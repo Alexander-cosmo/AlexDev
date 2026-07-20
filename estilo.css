@@ -780,3 +780,22 @@ h1, h2, h3 {
     padding-right: 20px;
   }
 }
+/* BOTÓN DE IDIOMA */
+.btn-idioma {
+  background-color: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+  font-family: 'Inter', sans-serif;
+  margin-left: 12px;
+}
+ 
+.btn-idioma:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

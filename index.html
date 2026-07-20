@@ -16,11 +16,12 @@
     <nav class="navbar">
       <div class="logo"><img src="https://lh3.googleusercontent.com/u/0/d/135oGGc1pxwLPt21eEREQjYxF271cIPRh"></div>
       <ul class="menu" id="menu">
-        <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#Servicios">Servicios</a></li>
-        <li><a href="#Proyectos">Mis Proyectos</a></li>
+        <li><a href="#Inicio" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="#Servicios" data-i18n="nav.servicios">Servicios</a></li>
+        <li><a href="#Proyectos" data-i18n="nav.proyectos">Mis Proyectos</a></li>
       </ul>
-      <button class="btn-contactar" onclick="location.href='#contacto'">Contactame</button>
+      <button class="btn-contactar" onclick="location.href='#contacto'" data-i18n="nav.contactar">Contactame</button>
+      <button class="btn-idioma" id="btnIdioma">EN</button>
       <button class="btn-hamburguesa" id="btnHamburguesa" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
@@ -29,45 +30,45 @@
     <section class="hero" id="Inicio">
       <div class="hero-mancha hero-mancha-1"></div>
       <div class="hero-mancha hero-mancha-2"></div>
-      <span class="hero-eyebrow">Desarrollo web · Automatización · Soporte técnico</span>
-      <h1 class="hero-titulo">Hola, soy Alexander <span class="hero-wave">👋</span></h1>
-      <p class="hero-subtitulo">Desarrollo soluciones digitales a medida: automatización, páginas web, aplicaciones y soporte técnico.</p>
-      <button class="btn-hero" onclick="location.href='#Servicios'">Ver mis servicios</button>
+      <span class="hero-eyebrow" data-i18n="hero.eyebrow">Desarrollo web · Automatización · Soporte técnico</span>
+      <h1 class="hero-titulo" data-i18n="hero.titulo">Hola, soy Alexander <span class="hero-wave">👋</span></h1>
+      <p class="hero-subtitulo" data-i18n="hero.subtitulo">Desarrollo soluciones digitales a medida: automatización, páginas web, aplicaciones y soporte técnico.</p>
+      <button class="btn-hero" onclick="location.href='#Servicios'" data-i18n="hero.boton">Ver mis servicios</button>
     </section>
 
     <section class="servicios reveal" id="Servicios">
-      <h2 class="servicios-titulo">Mis Servicios</h2>
+      <h2 class="servicios-titulo" data-i18n="servicios.titulo">Mis Servicios</h2>
       <div class="cards cards-servicios">
 
         <div class="card">
           <div class="card-icono">🤖</div>
-          <h3>Automatización</h3>
-          <p>Automatizá procesos repetitivos con Google Forms, Sheets y Apps Script. Ahorrá horas de trabajo manual.</p>
+          <h3 data-i18n="servicios.card1.titulo">Automatización</h3>
+          <p data-i18n="servicios.card1.texto">Automatizá procesos repetitivos con Google Forms, Sheets y Apps Script. Ahorrá horas de trabajo manual.</p>
         </div>
 
         <div class="card">
           <div class="card-icono">🌐</div>
-          <h3>Páginas web</h3>
-          <p>Landing pages y sitios web profesionales, modernos y responsive para tu negocio o emprendimiento.</p>
+          <h3 data-i18n="servicios.card2.titulo">Páginas web</h3>
+          <p data-i18n="servicios.card2.texto">Landing pages y sitios web profesionales, modernos y responsive para tu negocio o emprendimiento.</p>
         </div>
 
         <div class="card">
           <div class="card-icono">💻</div>
-          <h3>Apps y bases de datos</h3>
-          <p>Desarrollo de aplicaciones a medida con bases de datos relacionales adaptadas a tus necesidades.</p>
+          <h3 data-i18n="servicios.card3.titulo">Apps y bases de datos</h3>
+          <p data-i18n="servicios.card3.texto">Desarrollo de aplicaciones a medida con bases de datos relacionales adaptadas a tus necesidades.</p>
         </div>
 
         <div class="card">
           <div class="card-icono">🔧</div>
-          <h3>Soporte técnico</h3>
-          <p>Reparación, mantenimiento y optimización de equipos. Instalación y configuración de Windows y Linux.</p>
+          <h3 data-i18n="servicios.card4.titulo">Soporte técnico</h3>
+          <p data-i18n="servicios.card4.texto">Reparación, mantenimiento y optimización de equipos. Instalación y configuración de Windows y Linux.</p>
         </div>
 
       </div>
     </section>
 
     <section class="sobre-mi reveal" id="sobre-mi">
-      <h2 class="sobre-mi-titulo">Sobre mí</h2>
+      <h2 class="sobre-mi-titulo" data-i18n="sobreMi.titulo">Sobre mí</h2>
       <div class="sobre-mi-contenido">
 
         <div class="sobre-mi-foto">
@@ -75,12 +76,12 @@
         </div>
 
         <div class="sobre-mi-texto">
-          <p>Soy un desarrollador freelance de Buenos Aires con experiencia en automatización de procesos, desarrollo de aplicaciones, paginas web y soporte técnico. Me especializo en detectar procesos manuales repetitivos y convertirlos en soluciones digitales eficientes.</p>
-          <p>Trabajo con Google Workspace, HTML, CSS, JavaScript, java, c++ y bases de datos relacionales. Siempre con foco en soluciones prácticas que ahorren tiempo real a mis clientes.</p>
+          <p data-i18n="sobreMi.parrafo1">Soy un desarrollador freelance de Buenos Aires con experiencia en automatización de procesos, desarrollo de aplicaciones, paginas web y soporte técnico. Me especializo en detectar procesos manuales repetitivos y convertirlos en soluciones digitales eficientes.</p>
+          <p data-i18n="sobreMi.parrafo2">Trabajo con Google Workspace, HTML, CSS, JavaScript, java, c++ y bases de datos relacionales. Siempre con foco en soluciones prácticas que ahorren tiempo real a mis clientes.</p>
           <div class="sobre-mi-datos">
-            <span>📍 Buenos Aires, Argentina</span>
-            <span>💻 Desarrollo web y automatización</span>
-            <span>🎓 Técnico Universitario en Programación</span>
+            <span data-i18n="sobreMi.dato1">📍 Buenos Aires, Argentina</span>
+            <span data-i18n="sobreMi.dato2">💻 Desarrollo web y automatización</span>
+            <span data-i18n="sobreMi.dato3">🎓 Técnico Universitario en Programación</span>
           </div>
         </div>
 
@@ -88,72 +89,72 @@
     </section>
 
     <section class="proyectos reveal" id="Proyectos">
-      <h2 class="proyectos-titulo">Mis Proyectos</h2>
-      <p class="proyectos-subtitulo">Una selección de trabajos hechos con distintas tecnologías y enfoques</p>
+      <h2 class="proyectos-titulo" data-i18n="proyectos.titulo">Mis Proyectos</h2>
+      <p class="proyectos-subtitulo" data-i18n="proyectos.subtitulo">Una selección de trabajos hechos con distintas tecnologías y enfoques</p>
 
       <div class="cards cards-proyectos">
 
         <div class="card card-proyecto">
           <div class="card-icono">🤖</div>
           <h3>Sistema de reportes</h3>
-          <p>Automatización completa con Google Forms, Sheets y Apps Script para gestión de líderes.</p>
-          <a href="ProyectoReporte.html" class="card-link" target="_blank">Ver proyecto →</a>
+          <p data-i18n="proyectos.reportes">Automatización completa con Google Forms, Sheets y Apps Script para gestión de líderes.</p>
+          <a href="ProyectoReporte.html" class="card-link" target="_blank" data-i18n="proyectos.verProyecto">Ver proyecto →</a>
         </div>
 
         <div class="card card-proyecto">
           <div class="card-icono">🌐</div>
           <h3>BarberKing</h3>
-          <p>Página web profesional y responsive construida con HTML y CSS puro.</p>
-          <a href="barberking/index.html" class="card-link" target="_blank">Ver proyecto →</a>
+          <p data-i18n="proyectos.barberking">Página web profesional y responsive construida con HTML y CSS puro.</p>
+          <a href="barberking/index.html" class="card-link" target="_blank" data-i18n="proyectos.verProyecto">Ver proyecto →</a>
         </div>
 
         <div class="card card-proyecto">
           <div class="card-icono">🥐</div>
           <h3>Napolitan</h3>
-          <p>Landing page para panadería artesanal con diseño cálido, sección de productos, historia y contacto.</p>
-          <a href="napolitan/index.html" class="card-link" target="_blank">Ver proyecto →</a>
+          <p data-i18n="proyectos.napolitan">Landing page para panadería artesanal con diseño cálido, sección de productos, historia y contacto.</p>
+          <a href="napolitan/index.html" class="card-link" target="_blank" data-i18n="proyectos.verProyecto">Ver proyecto →</a>
         </div>
 
         <div class="card card-proyecto">
           <div class="card-icono">🛡️</div>
           <h3>SegurAR</h3>
-          <p>Página web completa para aseguradora con panel de cliente, login y gestión de pólizas.</p>
-          <a href="SeguAR/index.html" class="card-link" target="_blank">Ver proyecto →</a>
+          <p data-i18n="proyectos.segurar">Página web completa para aseguradora con panel de cliente, login y gestión de pólizas.</p>
+          <a href="SeguAR/index.html" class="card-link" target="_blank" data-i18n="proyectos.verProyecto">Ver proyecto →</a>
         </div>
 
         <div class="card card-proyecto">
           <div class="card-icono">🏛️</div>
           <h3>La Quinta Alba</h3>
-          <p>Landing para salón de eventos con selector interactivo según tipo de celebración, galería y ubicación con mapa.</p>
-          <a href="laquintaalba/index.html" class="card-link" target="_blank">Ver proyecto →</a>
+          <p data-i18n="proyectos.laquintaalba">Landing para salón de eventos con selector interactivo según tipo de celebración, galería y ubicación con mapa.</p>
+          <a href="laquintaalba/index.html" class="card-link" target="_blank" data-i18n="proyectos.verProyecto">Ver proyecto →</a>
         </div>
 
         <div class="card card-proyecto">
           <div class="card-icono">🖥️</div>
           <h3>VOLTEK</h3>
-          <p>E-commerce de componentes de PC con carrito, inicio de sesión y armador de PC con chequeo de compatibilidad.</p>
-          <a href="Voltek/index.html" class="card-link" target="_blank">Ver proyecto →</a>
+          <p data-i18n="proyectos.voltek">E-commerce de componentes de PC con carrito, inicio de sesión y armador de PC con chequeo de compatibilidad.</p>
+          <a href="Voltek/index.html" class="card-link" target="_blank" data-i18n="proyectos.verProyecto">Ver proyecto →</a>
         </div>
 
          <div class="card card-proyecto">
           <div class="card-icono">🍷</div>
-          <h3>lacava</h3>
-          <p>Página para restaurante pensada para enamorar a primera vista: menú con fotos, historia del lugar, reservas online y un diseño elegante que invita a quedarse.</p>
-          <a href="lacava/index.html" class="card-link" target="_blank">Ver proyecto →</a>
+          <h3>La Cava</h3>
+          <p data-i18n="proyectos.lacava">Página para restaurante pensada para enamorar a primera vista: menú con fotos, historia del lugar, reservas online y un diseño elegante que invita a quedarse.</p>
+          <a href="lacava/index.html" class="card-link" target="_blank" data-i18n="proyectos.verProyecto">Ver proyecto →</a>
         </div>
 
         <div class="card card-proyecto">
           <div class="card-icono">💪</div>
           <h3>IronPulse</h3>
-          <p>Pagina web para gimnasio con múltiples sedes: planes de membresía, clases disponibles y formulario para reservar una clase de prueba gratis.</p>
-          <a href="IronPulse/index.html" class="card-link" target="_blank">Ver proyecto →</a>
+          <p data-i18n="proyectos.ironpulse">Página web para gimnasio con múltiples sedes: planes de membresía, clases disponibles y formulario para reservar una clase de prueba gratis.</p>
+          <a href="IronPulse/index.html" class="card-link" target="_blank" data-i18n="proyectos.verProyecto">Ver proyecto →</a>
         </div>
 
       </div>
     </section>
 
     <section class="contacto reveal" id="contacto">
-      <h2 class="contacto-titulo">Contactame</h2>
+      <h2 class="contacto-titulo" data-i18n="contacto.titulo">Contactame</h2>
       <form class="formulario" id="formularioContacto" action="https://formspree.io/f/xgojebrg" method="POST" novalidate>
 
         <div class="campo">
@@ -162,7 +163,8 @@
             name="nombre"
             id="campoNombre"
             class="input"
-            placeholder="Tu nombre...">
+            placeholder="Tu nombre..."
+            data-i18n-placeholder="contacto.placeholderNombre">
           <span class="campo-error" id="errorNombre"></span>
         </div>
 
@@ -172,7 +174,8 @@
             name="email"
             id="campoEmail"
             class="input"
-            placeholder="Tu email...">
+            placeholder="Tu email..."
+            data-i18n-placeholder="contacto.placeholderEmail">
           <span class="campo-error" id="errorEmail"></span>
         </div>
 
@@ -181,11 +184,12 @@
             name="mensaje"
             id="campoMensaje"
             class="input textarea"
-            placeholder="Tu mensaje..."></textarea>
+            placeholder="Tu mensaje..."
+            data-i18n-placeholder="contacto.placeholderMensaje"></textarea>
           <span class="campo-error" id="errorMensaje"></span>
         </div>
 
-        <button type="submit" class="btn-hero">Enviar mensaje</button>
+        <button type="submit" class="btn-hero" data-i18n="contacto.boton">Enviar mensaje</button>
 
       </form>
     </section>
@@ -194,9 +198,9 @@
       <div class="footer-top">
         <div class="logo"><img src="https://lh3.googleusercontent.com/u/0/d/135oGGc1pxwLPt21eEREQjYxF271cIPRh"></div>
         <ul class="menu">
-          <li><a href="#Inicio">Inicio</a></li>
-          <li><a href="#Servicios">Servicios</a></li>
-          <li><a href="#Proyectos">Proyectos</a></li>
+          <li><a href="#Inicio" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="#Servicios" data-i18n="nav.servicios">Servicios</a></li>
+          <li><a href="#Proyectos" data-i18n="nav.proyectos2">Proyectos</a></li>
         </ul>
       </div>
     </footer>
@@ -211,12 +215,13 @@
     <div class="modal-overlay" id="modal">
       <div class="modal">
         <div class="modal-icono">✅</div>
-        <h3>¡Mensaje enviado!</h3>
-        <p>Te respondo a la brevedad. ¡Gracias por contactarme!</p>
-        <button class="btn-hero" onclick="cerrarModal()">Cerrar</button>
+        <h3 data-i18n="modal.titulo">¡Mensaje enviado!</h3>
+        <p data-i18n="modal.texto">Te respondo a la brevedad. ¡Gracias por contactarme!</p>
+        <button class="btn-hero" onclick="cerrarModal()" data-i18n="modal.boton">Cerrar</button>
       </div>
     </div>
 
+    <script src="traducciones.js"></script>
     <script src="script.js"></script>
 
   </body>
